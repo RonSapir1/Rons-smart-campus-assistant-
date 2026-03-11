@@ -12,8 +12,8 @@
             --ios-dark-text: #000000;
             --ios-light-text: #8E8E93;
             --glass-bg: rgba(255, 255, 255, 0.85);
-            --uni-primary: #1e3a8a; /* כחול אוניברסיטה עמוק */
-            --uni-accent: #fbbf24; /* צהוב/זהב אקדמי */
+            --uni-primary: #1e3a8a; 
+            --uni-accent: #fbbf24; 
         }
 
         * {
@@ -471,7 +471,6 @@
 </div>
 
 <script>
-    // ניהול פתיחה/סגירה של הבועה
     let isChatOpen = false;
     const appContainer = document.getElementById('appContainer');
     const iconChat = document.getElementById('iconChat');
@@ -495,11 +494,10 @@
         }
     }
 
-    // ניהול התקשורת מול שרת ה-FastAPI (המוח של המערכת)
     const chatBox = document.getElementById('chatBox');
     const userInput = document.getElementById('userInput');
     const typingRow = document.getElementById('typingRow');
-    const API_URL = 'http://127.0.0.1:8000/ask';
+    const API_URL = 'http://localhost:8000/ask';
 
     function handleKeyPress(event) {
         if (event.key === 'Enter') sendMessage();

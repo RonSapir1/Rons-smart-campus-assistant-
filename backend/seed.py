@@ -43,35 +43,35 @@ def seed_database():
             category="סגל אקדמי",
             location="בניין B, חדר 401",
             operating_hours="שעות קבלה: יום ב', 10:00-12:00",
-            contact_email="amit.c@smartcampus.tbc"
+            contact_email="amit.r@smartcampus.tbc"
         ),
         Facility(
             name="פרופ׳ יונית לוי - מרצה למדעי הנתונים",
             category="סגל אקדמי",
             location="בניין C, חדר 210",
             operating_hours="שעות קבלה: יום ד', 14:00-16:00",
-            contact_email="shira.l@smartcampus.tbc"
+            contact_email="yonit.l@smartcampus.tbc"
         ),
         Facility(
             name="ד״ר דניאל ברשר - מרצה למסדי נתונים",
             category="סגל אקדמי",
             location="בניין A, חדר 105",
             operating_hours="שעות קבלה: יום א', 09:00-11:00",
-            contact_email="yael.a@smartcampus.tbc"
+            contact_email="daniel.a@smartcampus.tbc"
         ),
         Facility(
             name="מר רון ספיר - מרצה להנדסת תוכנה וניהול גרסאות",
             category="סגל אקדמי",
             location="בניין B, חדר 302",
             operating_hours="שעות קבלה: יום ה', 12:00-14:00",
-            contact_email="yonatan.s@smartcampus.tbc"
+            contact_email="Ron.s@smartcampus.tbc"
         ),
         Facility(
             name="ד״ר הראל אלון - מרצה לבינה מלאכותית ואוטומציה",
             category="סגל אקדמי",
             location="בניין C, חדר 405",
             operating_hours="שעות קבלה: יום ג', 16:00-18:00",
-            contact_email="michael.b@smartcampus.tbc"
+            contact_email="harel.b@smartcampus.tbc"
         )
     ]
 
