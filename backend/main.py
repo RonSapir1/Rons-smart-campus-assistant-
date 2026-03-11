@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 import time 
 import logging
 import asyncio
-from database import engine, Base,SessionLocal, Facility
+from database import engine, Base,SessionLocal, Data
 from dotenv import load_dotenv
 import google.generativeai as genai
 import os
@@ -47,11 +47,11 @@ class AnswerResponse(BaseModel):
 async def call_ai_service(question: str) -> dict:
     db = SessionLocal()
     try:
-        facilities = db.query(Facility).all()
+        Datas = db.query(Data).all()
         
         context_text = "מידע עדכני על מתקני הקמפוס ואנשי סגל (מרצים/מתרגלים):\n"
-        for f in facilities:
-            context_text += f"- {f.name} (קטגוריה: {f.category}): מיקום: {f.location}, שעות פעילות/קבלה: {f.operating_hours}, איש קשר: {f.contact_email}\n"
+        for d in Datas:
+            context_text += f"- {d.name} (קטגוריה: {d.category}): מיקום: {d.location}, שעות פעילות/קבלה: {d.operating_hours}, איש קשר: {d.contact_email}\n"
     finally:
         db.close() 
     
