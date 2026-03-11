@@ -72,6 +72,27 @@ def seed_database():
             location="בניין C, חדר 405",
             operating_hours="שעות קבלה: יום ג', 16:00-18:00",
             contact_email="harel.b@smartcampus.tbc"
+        ),
+        Data(
+            name="מבחן בקורס פייתון ופיתוח צד שרת",
+            category="לוח זמנים",
+            location="בניין B, אולמות 301-303",
+            operating_hours="25/05/2026, שעה 09:00",
+            contact_email="exams@smartcampus.tbc"
+        ),
+        Data(
+            name="מבחן בקורס בינה מלאכותית",
+            category="לוח זמנים",
+            location="בניין C, חדר 405",
+            operating_hours="01/06/2026, שעה 13:00",
+            contact_email="harel.b@smartcampus.tbc"
+        ),
+        Data(
+            name="מבחן בקורס מסדי נתונים",
+            category="לוח זמנים",
+            location="בניין A, אולם מרכזי",
+            operating_hours="15/06/2026, שעה 09:00",
+            contact_email="daniel.a@smartcampus.tbc"
         )
     ]
 
